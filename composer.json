@@ -1,0 +1,25 @@
+{
+    "name": "pocketphp/pocketcookies",
+    "description": "PocketCookies is a PHP library for handling cookies for PocketPHP boilerplate.",
+    "keywords": [
+        "cookies",
+        "session",
+        "security",
+        "pocketphp",
+        "pocketcookies",
+        "pocketcookiesphp"
+    ],
+
+    "version": "1.0.0-dev",
+    "author": "Himanshu Nishad",
+    "require": {
+        "php": "^8.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "PocketCookies\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
