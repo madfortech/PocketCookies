@@ -10,7 +10,7 @@
         "pocketcookiesphp"
     ],
 
-    "version": "1.0.0-dev",
+    "version": "1.0.0",
     "author": "Himanshu Nishad",
     "require": {
         "php": "^8.2"
@@ -18,8 +18,12 @@
 
     "autoload": {
         "psr-4": {
-            "PocketCookies\\": "src/"
+            "PocketCookies\\": "src/",
+            "PocketCookies\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "11.5.28"
+    }
 }
