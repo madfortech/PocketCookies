@@ -1,8 +1,14 @@
 <?php
 namespace PocketCookies;
 
-class PocketCookies
+class CookieManager
 {
+
+    public function getCookieText()
+    {
+        return "Hello from PocketCookies!";
+    }
+
     /**
      * Set a secure cookie with basic options
      * @param string $name Cookie name

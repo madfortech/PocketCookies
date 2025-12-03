@@ -32,7 +32,7 @@ composer require pocketcookies/pocketcookies
 ## add this code at the top of the file
 
 ```php
-use PocketCookies\PocketCookies;
+use PocketCookies\CookieManager;
 ``` 
 
 
@@ -44,7 +44,7 @@ $this->handleRememberMe();
 ``` php
     // Handle remember me
     private function handleRememberMe() {
-        if (empty($_SESSION['user_id']) && $cookie = PocketCookies::get('remember_me')) {
+        if (empty($_SESSION['user_id']) && $cookie = CookieManager::get('remember_me')) {
             // Format: "user_id|hashed_identifier"
             $parts = explode('|', $cookie);
             
@@ -80,7 +80,7 @@ $this->handleRememberMe();
         $hashedIdentifier = $this->createRememberHash($user);
         $value = "{$user->id}|{$hashedIdentifier}";
         
-        PocketCookies::set('remember_me', $value, 30); // 30 days
+        CookieManager::set('remember_me', $value, 30); // 30 days
     }
 ```
 
@@ -101,14 +101,14 @@ $this->handleRememberMe();
     if ($remember) {
         $this->setRememberCookie($user);
     } else {
-        PocketCookies::delete('remember_me');
+        CookieManager::delete('remember_me');
     }
 ```
 
 ``` php
     // Delete remember cookie
     if (!empty($_SESSION['user_id'])) {
-        PocketCookies::delete('remember_me');
+        CookieManager::delete('remember_me');
     }
 ```
  

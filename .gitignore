@@ -1,1 +1,18 @@
-/vendor
+# Dependencies
+/vendor/
+composer.lock
+
+# Development files
+.phpunit.result.cache
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
