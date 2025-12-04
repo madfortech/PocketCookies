@@ -8,7 +8,7 @@ PocketCookies is a lightweight, secure, and easy-to-use PocketPHP boilerplate fo
 You can install PocketCookies via Composer:
 
 ```bash
-composer require pocketcookies/pocketcookies
+composer require pocketphp/pocketcookies
 ```
 
 ## Basic Usage
