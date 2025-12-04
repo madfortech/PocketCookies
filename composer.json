@@ -10,7 +10,6 @@
         "pocketcookiesphp"
     ],
 
-    "version": "1.0.1-alpha",
     "author": "Himanshu Nishad",
     "require": {
         "php": "^8.2"
